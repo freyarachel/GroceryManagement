@@ -2,8 +2,8 @@ package Project;
 
 public class Groceries {
 
-	
-	private int groceryId;
+    
+    private int groceryId;
     private String groceryName;
     private double groceryPrice;
 
