@@ -11,7 +11,7 @@ public class GroceryManagement {
 	private String userNamereg;
 	private String userPasswordreg;
 	
-	//User page is displayed where user can select any choice to create or exit froom application
+  //User page is displayed where user can select any choice to create or exit froom application
    void userPage() {
           System.out.println("1. Register");
           System.out.println("2. Login");
@@ -125,7 +125,8 @@ public class GroceryManagement {
 	}
 	
 	
-    
+
+       //Displaying groceries and adding into cart
 	void groceries() {
 		
 		System.out.println("------------");
