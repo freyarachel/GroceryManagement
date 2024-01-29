@@ -12,17 +12,17 @@ public class GroceryManagement {
 	private String userPasswordreg;
 	
 	//User page is displayed where user can select any choice to create or exit froom application
-	void userPage() {
-	System.out.println("1. Register");
-    System.out.println("2. Login");
-    System.out.println("3. Exit");
-    System.out.print("Enter your choice: ");
-    int input = sc.nextInt();
+   void userPage() {
+          System.out.println("1. Register");
+          System.out.println("2. Login");
+          System.out.println("3. Exit");
+          System.out.print("Enter your choice: ");
+	      
+        int input = sc.nextInt();
 
-    
-    switch(input){
-    
-        case 1:
+	switch(input){
+
+	case 1:
             register();
             break;
             
@@ -36,8 +36,11 @@ public class GroceryManagement {
             
         default:
             System.out.println("Invalid choice");
-    }
+
+	     }
     
+        
+    } 
 
 
 }
@@ -49,7 +52,7 @@ public class GroceryManagement {
 		System.out.println("Enter your name: ");
 		userNamereg=sc.next();
 		
-        System.out.println("Enter your password: ");
+                System.out.println("Enter your password: ");
 		userPasswordreg=sc.next();
 		
 		System.out.println("Succesfully created your account");
@@ -68,11 +71,11 @@ public class GroceryManagement {
 		//Executes atleast once and then checks the code
 		do{
 		
-	    System.out.println("Login");
-        System.out.println("Enter your name: ");
+	        System.out.println("Login");
+                System.out.println("Enter your name: ");
 		String userName=sc.next();
 		
-        System.out.println("Enter your password: ");
+                System.out.println("Enter your password: ");
 		String userPassword=sc.next();
 		
 		//Compares registered details content with login details
@@ -92,25 +95,21 @@ public class GroceryManagement {
 
 		}
 	}
-		while(true);
-		
-	
-	
-		
+		while(true);	
 	}
 	
-	//User can purchase by selecting a choice
-	void purchase() {
+  //User can purchase by selecting a choice
+  void purchase() {
 	System.out.println("Enter your choice: ");
-    System.out.println("1. Purchase Groceries");
-    System.out.println("2. Exit");
+        System.out.println("1. Purchase Groceries");
+        System.out.println("2. Exit");
 
-    int g = sc.nextInt();
+         int g = sc.nextInt();
     
-    switch(g){
+      switch(g){
     
         case 1:
-        	//executes
+            //executes
             groceries();
             break;
             
@@ -167,9 +166,9 @@ public class GroceryManagement {
 
 	    }
 	    
-	    //User inputs are stored in an array
+       //User inputs are stored in an array
 	    
-	    //No.of items is size of array
+       //No.of items is size of array
         System.out.println("Enter number of items you want to buy: ");
         int n= sc.nextInt();
         
@@ -198,8 +197,8 @@ public class GroceryManagement {
 		System.out.println("------------");
 
 		
-		//Asks user to continue or exit from application
-		System.out.println("Enter your choice: ");
+	    //Asks user to continue or exit from application
+	    System.out.println("Enter your choice: ");
 	    System.out.println("1. Continue");
 	    System.out.println("2. Exit");
 
@@ -221,11 +220,8 @@ public class GroceryManagement {
 	    }
  
 	}
-	    	   
 
-        
-    
-	
+         //Main method
 	 public static void main(String[] args){
 
 		 GroceryManagement obj=new GroceryManagement();
